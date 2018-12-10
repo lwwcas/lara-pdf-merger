@@ -1,7 +1,7 @@
 {
-    "name": "lynx39/lara-pdf-merger",
+    "name": "lwwcas/lara-pdf-merger",
     "description": "",
-    "keywords": ["merger","merge","pdf","manage","paginate", "laravel"],
+    "keywords": ["merger","merge","pdf","manage","paginate", "laravel", "lwwcas", "lucas duarte"],
     "license" : [
         "MIT"
     ],
@@ -15,10 +15,10 @@
     "require": {
         "php" : ">=5.4"
     },
-    "homepage" : "https://github.com/LynX39/lara-pdf-merger",
+    "homepage" : "https://github.com/lwwcas/lara-pdf-merger",
     "autoload": {
         "psr-0": {
-            "LynX39\\LaraPdfMerger": "src/"
+            "Lwwcas\\LaraPdfMerger": "src/"
         }
     }
 }
