@@ -1,6 +1,6 @@
 <?php
 
-namespace LynX39\LaraPdfMerger;
+namespace Lwwcas\LaraPdfMerger;
 
 use Exception;
 use TCPDI;
@@ -51,7 +51,7 @@ class PdfManage
         $fpdi = new TCPDI;
         $fpdi->setPrintHeader(false);
         $fpdi->setPrintFooter(false);
-        
+
         // setting the meta tags
         if (!empty($meta)) {
             $this->setMeta($meta);
@@ -72,7 +72,7 @@ class PdfManage
                     $size       = $fpdi->getTemplateSize($template);
 
                     if($orientation==null)$fileorientation=$size['w']< $size['h']?'P' : 'L';
-                    
+
                     $fpdi->AddPage($fileorientation, array($size['w'], $size['h']));
                     $fpdi->useTemplate($template);
                 }
@@ -84,7 +84,7 @@ class PdfManage
                     $size = $fpdi->getTemplateSize($template);
 
                     if($orientation==null)$fileorientation=$size['w']< $size['h']?'P' : 'L';
-                    
+
                     $fpdi->AddPage($fileorientation, array($size['w'], $size['h']));
                     $fpdi->useTemplate($template);
                 }
@@ -170,13 +170,13 @@ class PdfManage
 
         return $newpages;
     }
-    
+
     /**
      * Set your meta data in merged pdf
      * @param $fpdi
      * @array $meta [title => $title, author => $author, subject => $subject, keywords => $keywords, creator => $creator]
      * @return void
-     */  
+     */
     protected function setMeta($fpdi, $meta)
     {
         foreach ($meta as $key => $arg) {
@@ -186,6 +186,6 @@ class PdfManage
             }
         }
         return $fpdi;
-    } 
+    }
 
 }

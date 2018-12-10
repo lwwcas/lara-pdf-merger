@@ -1,4 +1,4 @@
-<?php namespace LynX39\LaraPdfMerger;
+<?php namespace Lwwcas\LaraPdfMerger;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -16,4 +16,4 @@ class PdfMergerServiceProvider extends ServiceProvider {
             return new PdfManage();
         });
     }
-} 
+}
