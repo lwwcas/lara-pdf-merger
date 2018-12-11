@@ -26,7 +26,7 @@ You can optionally use the facade for shorter code. Add this to your facades:
 
 ```php
 
-$pdf = new LynX39\LaraPdfMerger\PdfManage;
+$pdf = new Lwwcas\LaraPdfMerger\PdfManage;
 
 $pdf->addPDF('samplepdfs/one.pdf', '1, 3, 4');
 $pdf->addPDF('samplepdfs/two.pdf', '1-2');
