@@ -12,15 +12,15 @@ Change parsers and use tcpdf, tcpdi and tcpdi_parser
 
 Require this package in your composer.json and update composer.
 
-    "lynx39/lara-pdf-merger": "1.0.*",
+    "lwwcas/lara-pdf-merger": "1.0.*",
 
 After updating composer, add the ServiceProvider to the providers array in config/app.php
 
-    LynX39\LaraPdfMerger\PdfMergerServiceProvider::class,
+    Lwwcas\LaraPdfMerger\PdfMergerServiceProvider::class,
 
 You can optionally use the facade for shorter code. Add this to your facades:
 
-    'PdfMerger' => LynX39\LaraPdfMerger\Facades\PdfMerger::class,
+    'PdfMerger' => Lwwcas\LaraPdfMerger\Facades\PdfMerger::class,
     
 ## Using
 
