@@ -54,7 +54,7 @@ class PdfManage
 
         // setting the meta tags
         if (!empty($meta)) {
-            $this->setMeta($meta);
+            $this->setMeta($fpdi, $meta);
         }
 
         // merger operations
