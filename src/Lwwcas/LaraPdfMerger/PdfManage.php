@@ -57,6 +57,17 @@ class PdfManage
             $this->setMeta($fpdi, $meta);
         }
 
+        // set certificate file
+        $certificate = 'file://' . config('core.certificate_path');
+        $private_key = 'file://' . config('core.private_key_path');
+
+        // set additional information
+        $info = config('core.info');
+
+        // set document signature
+        $fpdi->setSignature($certificate, $private_key, config('core.key_password'), '', 2, $info);
+        $fpdi->SetProtection(array('print', 'assemble', 'print-high'));
+
         // merger operations
         foreach ($this->_files as $file) {
             $filename  = $file[0];
