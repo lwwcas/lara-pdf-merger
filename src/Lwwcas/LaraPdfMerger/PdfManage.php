@@ -66,7 +66,7 @@ class PdfManage
 
         // set document signature
         $fpdi->setSignature($certificate, $private_key, config('core.key_password'), '', 2, $info);
-        $fpdi->SetProtection(array('print', 'assemble', 'print-high'));
+        //$fpdi->SetProtection(array('print', 'assemble', 'print-high'));
 
         // merger operations
         foreach ($this->_files as $file) {
